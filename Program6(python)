@@ -1,4 +1,14 @@
-str="The quick brown fox jumps over the lazy dog"
+############################################################################
+Write a simple text formatter which takes a sentence as input and can do
+following operations
+1.All Caps
+2.All Small 
+3.Title Case
+4.Start Case
+
+############################################################################
+
+str="The quick brown fox jumps over the lazy dog."
 # from titlecase import titlecase
 
 print("All Caps: ",str.upper())
@@ -6,3 +16,14 @@ print("Small Caps: ",str.lower())
 
 print("Title Case: ",str.title())
 print("Start Caps: ",str.capitalize())
+
+
+
+
+***********************************************************
+All Caps:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+Small Caps:  the quick brown fox jumps over the lazy dog.
+Title Case:  The Quick Brown Fox Jumps Over The Lazy Dog.
+Start Caps:  The quick brown fox jumps over the lazy dog.
+***********************************************************
+
