@@ -18,4 +18,5 @@ def allPermutations(str):
 # Driver program 
 if __name__ == "__main__": 
     str = 'ProtoSem'
+    allPermutations(str)
  
