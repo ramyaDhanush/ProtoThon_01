@@ -1,0 +1,8 @@
+str="The quick brown fox jumps over the lazy dog"
+# from titlecase import titlecase
+
+print("All Caps: ",str.upper())
+print("Small Caps: ",str.lower())
+
+print("Title Case: ",str.title())
+print("Start Caps: ",str.capitalize())
