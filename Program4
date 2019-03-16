@@ -1,1 +1,21 @@
+***************************************************************************
+Run a empty while (1) code and build an array inside the loop (the program
+can only be aborted)
+1 Understand the cpu and memory usage of the code (screenshots and
+insights)
+2. Make the code run with <5% of cpu usage and stable memory building
+inside loop
+###########################################################################
+
+
+#include<stdio.h>
+
+int main() {
+  long long int a[20000];int i=0;
+  while(1){
+    a[i]=0;i++;
+  }
+  return 0;
+}
+
 
