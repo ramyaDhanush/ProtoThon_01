@@ -1,0 +1,69 @@
+****************************************Calculate the RootMeanSquare values of numbers given as comma
+seperated string input by the user. For eg. take 56,76,45,32 as input from
+user and calculate RMS for [56,76,45,32]. User can also enter floating
+points as inputs eg, 40.785,52.2,32,37.204,24.07  ************************************************
+
+
+######################################### Python Program to calculate RMS Value #############################################
+
+
+import math  
+#Function that Calculate Root Mean Square  
+def rmsCalculation(arr,arr_length): 
+    square = 0
+    mean = 0.0
+    root = 0.0
+      
+    #Calculate square 
+    for i in range(0,arr_length): 
+        square += (arr[i]**2) 
+      
+    #Calculate Mean  
+    mean = (square / (float)(arr_length)) 
+      
+    #Calculate Square Root 
+    root = math.sqrt(mean) 
+      
+    return root 
+  
+#Driver code 
+if __name__=='__main__': 
+    arr = []   #An empty list 
+    print("Enter a list length : ")
+    for i in range(int(input())):
+        print("Enter list element ",i+1," : ")
+        arr.append(float(input()))    #Appending elements to the list
+    print(arr)          #print list
+    arr_length = len(arr)           #Calculating list length
+    print("\nRMS Value")
+    print(rmsCalculation(arr, arr_length))  #Function to calculate RMS file is Called here
+    
+    
+***************************Test Case*****************************    
+    
+Enter a list length : 
+4
+Enter list element  1  : 
+56
+Enter list element  2  : 
+76
+Enter list element  3  : 
+45
+Enter list element  4  : 
+32
+[56.0, 76.0, 45.0, 32.0]
+
+RMS Value 54.68317840067456
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
