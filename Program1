@@ -1,0 +1,55 @@
+****Build a simple calculator which has following features/functionalities (use
+switch case for C/C++, case structure in LV and Dictionary in python)
+1.takes two floating points as inputs
+2.User has to select the operation to be performed on the numbers (add,
+sub…)
+3.Result printed 
+******
+
+*********************************C program to calculate
+#include <stdio.h>
+
+int main()
+{
+    float num1,num2;
+    char oper;
+    printf("Select Operation to be performed '+' '-' '*' '/' , operator:");
+    scanf("%c",&oper);
+    printf("Enter first floating point number, num1: ");
+    scanf("%f",&num1);
+    printf("Enter second floating point number, num2: ");
+    scanf("%f",&num2);
+    
+    switch(oper)
+    {
+        case '+':
+            printf("%f + %f = %f",num1, num2, num1 + num2);
+            break;
+
+        case '-':
+            if num1>num2
+                printf("%f + %f = %f",num1, num2, num1 - num2);
+            else
+                printf("%f + %f = %f",num1, num2, num2 - num1);
+
+            break;
+
+        case '*':
+            printf("%f + %f = %f",num1, num2, num1 * num2);            
+            break;
+
+        case '/':
+            if num2==0
+                printf("DivideByZeroError");
+            else:
+                printf("%f + %f = %f",num1, num2, num1 / num2);            
+            break;
+
+        // operator doesn't match any case constant (+, -, *, /)
+        default:
+            printf("Error! operator is not correct");
+    }
+    
+    return 0;
+   
+}
